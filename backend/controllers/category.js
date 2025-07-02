@@ -152,3 +152,33 @@ exports.getCategoryPageDetails = async (req, res) => {
     });
   }
 };
+exports.categoryDetailsbyId = async (req, res) => {
+  try {
+    const { id } = req.params;
+
+    const category = await Category.findById(id)
+      .populate({
+        path: "courses",
+        match: { status: "Published" }, // optional
+        populate: "ratingAndReviews",   // optional
+      });
+
+    if (!category) {
+      return res.status(404).json({
+        success: false,
+        message: "Category not found",
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      data: category,
+    });
+  } catch (err) {
+    return res.status(500).json({
+      success: false,
+      message: "Failed to fetch category",
+      error: err.message,
+    });
+  }
+};
