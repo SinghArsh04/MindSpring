@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { Link, matchPath, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
-// import { NavbarLinks } from "../../../data/navbar-links"
+import { NavbarLinks } from "../../../data/navbar-links"
 import MindSpringLogo from '../../assets/Logo/logo-light.png'
-// import { fetchCourseCategories } from './../../services/operations/courseDetailsAPI';
+import { fetchCourseCategories } from './../../services/operations/courseDetailsAPI';
 
 // import ProfileDropDown from '../core/Auth/ProfileDropDown'
 // import MobileProfileDropDown from '../core/Auth/MobileProfileDropDown'
