@@ -188,10 +188,10 @@ const Navbar = () => {
                     }
 
                     {/* for large devices */}
-                    {token !== null && <ProfileDropDown />}
+                    {/*token !== null && <ProfileDropDown />*/}
 
                     {/* for small devices */}
-                    {token !== null && <MobileProfileDropDown />}
+                    {/*token !== null && <MobileProfileDropDown />*/}
 
                 </div>
             </div>
