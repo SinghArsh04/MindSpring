@@ -3,11 +3,11 @@ import { Link, matchPath, useLocation } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 
 import { NavbarLinks } from "../../../data/navbar-links"
-import MindSpringLogo from '../../assets/Logo/logo-light.png'
+import studyNotionLogo from '../../assets/Logo/Logo-Full-Light.png'
 import { fetchCourseCategories } from './../../services/operations/courseDetailsAPI';
 
-// import ProfileDropDown from '../core/Auth/ProfileDropDown'
-// import MobileProfileDropDown from '../core/Auth/MobileProfileDropDown'
+import ProfileDropDown from '../core/Auth/ProfileDropDown'
+import MobileProfileDropDown from '../core/Auth/MobileProfileDropDown'
 
 import { AiOutlineShoppingCart } from "react-icons/ai"
 import { MdKeyboardArrowDown } from "react-icons/md"
@@ -89,7 +89,7 @@ const Navbar = () => {
             <div className='flex w-11/12 max-w-maxContent items-center justify-between '>
                 {/* logo */}
                 <Link to="/">
-                    <img src={MindSpringLogo} width={160} height={42} loading='lazy' />
+                    <img src={studyNotionLogo} width={160} height={42} loading='lazy' />
                 </Link>
 
                 {/* Nav Links - visible for only large devices*/}
@@ -188,10 +188,10 @@ const Navbar = () => {
                     }
 
                     {/* for large devices */}
-                    {/*token !== null && <ProfileDropDown />*/}
+                    {token !== null && <ProfileDropDown />}
 
                     {/* for small devices */}
-                    {/*token !== null && <MobileProfileDropDown />*/}
+                    {token !== null && <MobileProfileDropDown />}
 
                 </div>
             </div>

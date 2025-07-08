@@ -10,15 +10,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ramonak/react-progress-bar": "^5.4.0",
     "@reduxjs/toolkit": "^2.8.2",
     "axios": "^1.10.0",
+    "chart.js": "^4.5.0",
+    "copy-to-clipboard": "^3.3.3",
+    "framer-motion": "^12.23.0",
     "latest": "^0.2.0",
     "react": "^19.1.0",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.1.0",
+    "react-dropzone": "^14.3.8",
+    "react-hook-form": "^7.60.0",
     "react-hot-toast": "^2.5.2",
     "react-icons": "^5.5.0",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-otp-input": "^3.1.1",
+    "react-player": "^3.1.0",
+    "react-rating-stars-component": "^2.2.0",
     "react-redux": "^9.2.0",
-    "react-router-dom": "^7.6.3"
+    "react-router-dom": "^7.6.3",
+    "react-super-responsive-table": "^6.0.2",
+    "react-type-animation": "^3.2.0",
+    "swiper": "^11.2.10"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
